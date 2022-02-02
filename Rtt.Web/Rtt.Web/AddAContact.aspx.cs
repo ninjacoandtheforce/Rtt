@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Rtt.Web.Extensions;
 
 namespace Rtt.Web
 {
@@ -12,6 +13,12 @@ namespace Rtt.Web
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Page_Error(object sender, EventArgs e)
+        {
+            var ex = Server.GetLastError();
+            this.HandleException(ex, false);
         }
     }
 }

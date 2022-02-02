@@ -14,8 +14,7 @@ namespace Rtt.Dal
 {
     public class Repository<T> : IRepository<T> where T : class, new()
     {
-
-        private readonly string _connStr;
+        protected readonly string _connStr;
 
         protected Repository()
         {
@@ -24,7 +23,7 @@ namespace Rtt.Dal
 
         
 
-        public async Task<T> GetAsync (string querystring, SqlParameter[] sqlParameters = null) 
+        public async Task<T> GetAsync (string querystring, SqlParameter[] sqlParameters) 
         {
             using (var conn = new SqlConnection(_connStr))
             {
@@ -85,6 +84,18 @@ namespace Rtt.Dal
             command.CommandTimeout = 0;
             command.Parameters.AddRange(sqlParameters);
             return Task.FromResult<SqlCommand>(command);
+        }
+
+        
+
+        public Task<T> AddAsync(string querystring, SqlParameter[] sqlParameters = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<T> RemoveAsync(string querystring, SqlParameter[] sqlParameters = null)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Rtt.Wcf.Service1" CodeBehind="ContactService.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Rtt.Wcf.ContactService" CodeBehind="ContactService.svc.cs" %>

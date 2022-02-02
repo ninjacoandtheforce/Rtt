@@ -2,6 +2,8 @@
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Dispatcher;
+using NLog;
+using NLog.Fluent;
 
 namespace Rtt.Wcf.Handlers
 {
@@ -20,7 +22,7 @@ namespace Rtt.Wcf.Handlers
         /// <returns></returns>
         public bool HandleError(Exception error)
         {
-            LogFactory.Logger().Error(error);
+            Log.Error();
             return true;
         }
 

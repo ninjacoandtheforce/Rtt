@@ -18,7 +18,7 @@ namespace Rtt.Dal.Interfaces
         //T SearchFirst(Expression<Func<T, bool>> predicate);
         //IQueryable<T> SearchFor(Expression<Func<T, bool>> predicate);
         Task<T> GetAsync(string querystring, SqlParameter[] sqlParameters = null);
-        Task<T> GetAllAsync(string querystring, SqlParameter[] sqlParameters);
+        Task<List<T>> GetAllAsync(string querystring, SqlParameter[] sqlParameters);
         Task<T> AddAsync(string querystring, SqlParameter[] sqlParameters = null);
         Task<T> RemoveAsync(string querystring, SqlParameter[] sqlParameters = null);
     }

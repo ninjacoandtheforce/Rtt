@@ -42,7 +42,7 @@ namespace Rtt.ErrorHandler.Models.Repository
         /// <returns>A filtered list of log events</returns>
         public IQueryable<LogEvent> GetByDateRangeAndType(DateTime start, DateTime end, string logLevel)
         {
-            IQueryable<LogEvent> list = from h in Context.vw_aspnet_WebEvents_extended
+            IQueryable<LogEvent> list = from h in Context.aspnet_WebEvents_extended
                                         where h.EventTimeUtc >= start && h.EventTimeUtc <= end
                                         && (h.Level == logLevel || logLevel == "All")
                                         select new LogEvent
@@ -82,7 +82,7 @@ namespace Rtt.ErrorHandler.Models.Repository
         /// <returns>A single Log event</returns>
         public LogEvent GetById(string id)
         {
-            LogEvent logEvent = logEvent = (from b in Context.vw_aspnet_WebEvents_extended
+            LogEvent logEvent = logEvent = (from b in Context.aspnet_WebEvents_extended
                                             where b.EventId == id
                                             select new LogEvent
                                             {

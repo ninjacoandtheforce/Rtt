@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Web;
+using System.Web.Mvc;
 using Elmah;
 
 namespace Rtt.ErrorHandler.Services.Logging.Elmah
 {
     
-    public class HandleErrorWithELMAHAttribute : HandleErrorAttribute
+    public class HandleErrorWithElmahAttribute : HandleErrorAttribute
     {
         public override void OnException(ExceptionContext context)
         {

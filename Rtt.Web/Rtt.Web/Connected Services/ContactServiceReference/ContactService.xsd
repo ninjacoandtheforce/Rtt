@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="Rtt.Wcf" elementFormDefault="qualified" targetNamespace="Rtt.Wcf" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57971/ContactService.svc?xsd=xsd1" namespace="Rtt.Models.Dto" />
+  <xs:element name="Create">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="Rtt.Models.Dto" minOccurs="0" name="item" nillable="true" type="q1:ContactDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="Rtt.Models.Dto" minOccurs="0" name="CreateResult" nillable="true" type="q2:ContactDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="Rtt.Models.Dto" minOccurs="0" name="item" nillable="true" type="q3:ContactDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="Rtt.Models.Dto" minOccurs="0" name="DeleteResult" nillable="true" type="q4:ContactDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="Rtt.Models.Dto" minOccurs="0" name="item" nillable="true" type="q5:ContactDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="Rtt.Models.Dto" minOccurs="0" name="UpdateResult" nillable="true" type="q6:ContactDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="Rtt.Models.Dto" minOccurs="0" name="GetAllResult" nillable="true" type="q7:ArrayOfContactDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="Rtt.Models.Dto" minOccurs="0" name="GetByIdResult" nillable="true" type="q8:ContactDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
