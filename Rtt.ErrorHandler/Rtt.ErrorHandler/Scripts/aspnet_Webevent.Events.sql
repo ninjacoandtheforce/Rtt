@@ -1,7 +1,7 @@
 USE Rtt
 GO
 
-/****** Object:  Table [dbo].[aspnet_WebEvent_Events]    Script Date: 2019/07/17 10:08:41 PM ******/
+/****** Object:  Table [dbo].[aspnet_WebEvent_Events]    Script Date: 2020/02/02 10:08:41 PM ******/
 SET ANSI_NULLS ON
 GO
 

@@ -1,7 +1,7 @@
 USE Rtt
 GO
 
-/****** Object:  Table [dbo].[ELMAH_Error]    Script Date: 2019/07/17 10:35:54 PM ******/
+/****** Object:  Table [dbo].[ELMAH_Error]    Script Date: 2020/02/02 10:35:54 PM ******/
 SET ANSI_NULLS ON
 GO
 

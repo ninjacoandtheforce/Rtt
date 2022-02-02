@@ -31,8 +31,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\..\Rtt.Web\packages\NLog.4.7.13\lib\net45\NLog.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +54,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Rtt.Dal\Rtt.Dal\Rtt.Dal.csproj">
+      <Project>{05c2a9d5-83d7-43be-8ab5-078e6476aae0}</Project>
+      <Name>Rtt.Dal</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Rtt.ErrorHandler\Rtt.ErrorHandler\Rtt.ErrorHandler.csproj">
       <Project>{1de80989-9f25-4be9-9161-0050f9903ef0}</Project>
       <Name>Rtt.ErrorHandler</Name>
@@ -54,6 +66,9 @@
       <Project>{9aa38bb6-070c-4edb-96b9-cee397b9dab4}</Project>
       <Name>Rtt.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

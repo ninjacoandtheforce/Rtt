@@ -1,6 +1,7 @@
 CREATE DATABASE Rtt;
-Go;
 
+use Rtt;
+go
 create table Contacts
 (
     ID int IDENTITY(1,1) primary key not null,

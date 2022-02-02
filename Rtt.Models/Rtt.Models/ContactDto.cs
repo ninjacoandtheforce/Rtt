@@ -53,10 +53,7 @@ namespace Rtt.Models
         public string STREET_CODE { get; set; }
         [DataMember]
         public string COUNTRY { get; set; }
-        [DataMember]
-        public Nullable<System.DateTime> DATE_CREATED { get; set; } = DateTime.Now;
-        [DataMember]
-        public Nullable<System.DateTime> DATE_MODIFIED { get; set; } = DateTime.Now;
+        
               
 
         ////BCC/ BEGIN CUSTOM CODE SECTION

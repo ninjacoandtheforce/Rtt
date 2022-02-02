@@ -1,7 +1,7 @@
 USE Rtt
 GO
 
-/****** Object:  Table [dbo].[aspnet_SchemaVersions]    Script Date: 2019/07/20 10:04:48 PM ******/
+/****** Object:  Table [dbo].[aspnet_SchemaVersions]    Script Date: 2020/02/02 10:04:48 PM ******/
 SET ANSI_NULLS ON
 GO
 
