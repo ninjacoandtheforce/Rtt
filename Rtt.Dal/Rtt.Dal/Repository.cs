@@ -86,11 +86,36 @@ namespace Rtt.Dal
             return Task.FromResult<SqlCommand>(command);
         }
 
-        
-
-        public Task<T> AddAsync(string querystring, SqlParameter[] sqlParameters = null)
+        private Task<SqlCommand> CreateAddCommandAsync(string querystring, SqlConnection connection, SqlParameter[] sqlParameters)
         {
-            throw new NotImplementedException();
+            var command = connection.CreateCommand();
+            command.CommandText = querystring;
+            command.Parameters.AddRange(sqlParameters);
+            return Task.FromResult<SqlCommand>(command);
+
+        }
+
+
+
+        public async Task<T> AddAsync(string querystring, SqlParameter[] sqlParameters = null)
+        {
+            using (var conn = new SqlConnection(_connStr))
+            {
+                var sqlCommand = await CreateAddCommandAsync(querystring, conn, sqlParameters);
+                var dataReader = await sqlCommand.ExecuteReaderAsync(CommandBehavior.CloseConnection);
+
+                if (dataReader.HasRows)
+                {
+                    var newObject = new T();
+
+                    if (await dataReader.ReadAsync())
+                    { dataReader.MapDataToObject(newObject); }
+
+                    return newObject;
+                }
+                else
+                { return null; }
+            }
         }
 
         public Task<T> RemoveAsync(string querystring, SqlParameter[] sqlParameters = null)
