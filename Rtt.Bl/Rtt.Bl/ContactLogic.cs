@@ -7,18 +7,24 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using Rtt.Dal.Interfaces;
 
 namespace Rtt.Bl
 {
     public class ContactLogic : ICrud<ContactDto>
     {
-        public Rtt.Dal.Repositories.ContactRepository Repository { get; } = new Rtt.Dal.Repositories.ContactRepository();
+        private readonly IUnitOfWork _unitOfWork;
+        public ContactLogic(IUnitOfWork unitOfWork)
+        {
+            this._unitOfWork = unitOfWork;
+        }
 
-        public ContactDto Create(ContactDto item)
+
+        public async Task<int?> CreateAsync(ContactDto item)
         {
             try
             {
-                return Repository.Add(item);                
+                return await _unitOfWork.Contacts.AddAsync(item);                
             }
             catch (SqlException dbx)
             {
@@ -32,11 +38,11 @@ namespace Rtt.Bl
             }
         }
 
-        public ContactDto Delete(ContactDto item)
+        public async Task<int?> DeleteAsync(int id)
         {
             try
             {
-                return Repository.Remove(item);
+                return await _unitOfWork.Contacts.DeleteAsync(id);
             }
             catch (SqlException dbx)
             {
@@ -50,11 +56,11 @@ namespace Rtt.Bl
             }
         }
 
-        public ContactDto Update(ContactDto item)
+        public async Task<int?> UpdateAsync(ContactDto item)
         {
             try
             {
-                return Repository.Update(item.ID, item);
+                return await _unitOfWork.Contacts.UpdateAsync(item);
             }
             catch (SqlException dbx)
             {
@@ -68,17 +74,12 @@ namespace Rtt.Bl
             }
         }
 
-        public IQueryable<ContactDto> GetAll()
+        public async Task<IQueryable<ContactDto>> GetAllAsync()
         {
             try
             {
-                var dtos = new List<ContactDto>();
-                var models = Repository.GetAll();
-                //if (models.Any())
-                //{
-                //    dtos.AddRange(models.Select(model => MapModelToDto(model)));
-                //}
-                return models.AsQueryable();
+                var results = await _unitOfWork.Contacts.GetAllAsync();
+                return results?.AsQueryable();
             }
             catch (SqlException dbx)
             {
@@ -93,11 +94,11 @@ namespace Rtt.Bl
 
         }
 
-        public ContactDto GetById(int id)
+        public async Task<ContactDto> GetByIdAsync(int id)
         {
             try
             {
-                return Repository.Get(id);
+                return await _unitOfWork.Contacts.GetByIdAsync(id);
             }
             catch (SqlException dbx)
             {
@@ -111,19 +112,16 @@ namespace Rtt.Bl
             }
         }
 
-        public ContactDto SearchFirst(Expression<Func<ContactDto, bool>> predicate)
+        public Task<ContactDto> SearchFirstAsync(Expression<Func<ContactDto, bool>> predicate)
         {
             throw new NotImplementedException();
         }
 
-        public List<ContactDto> SearchFor(Expression<Func<ContactDto, bool>> predicate)
+        public Task<List<ContactDto>> SearchForAsync(Expression<Func<ContactDto, bool>> predicate)
         {
             throw new NotImplementedException();
         }
 
-        public ContactDto MapToDto(string model)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

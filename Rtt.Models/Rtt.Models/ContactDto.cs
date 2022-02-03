@@ -53,8 +53,10 @@ namespace Rtt.Models
         public string STREET_CODE { get; set; }
         [DataMember]
         public string COUNTRY { get; set; }
-        
-              
+        [DataMember]
+        public DateTime AddedOn { get; set; }
+        [DataMember]
+        public DateTime ModifiedOn { get; set; }
 
         ////BCC/ BEGIN CUSTOM CODE SECTION
         [DataMember]
@@ -63,6 +65,10 @@ namespace Rtt.Models
             get { return $@"{TITLE} {LAST_NAME}, {FIRST_NAME}"; }
             protected set { }
         }
+
+        
+
+
         ////ECC/ END CUSTOM CODE SECTION 
 
     }

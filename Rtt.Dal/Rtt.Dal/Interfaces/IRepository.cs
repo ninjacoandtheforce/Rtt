@@ -8,16 +8,12 @@ using System.Threading.Tasks;
 
 namespace Rtt.Dal.Interfaces
 {
-    public interface IRepository<T>
+    public interface IRepository<T> where T : class
     {
-        //T Update(object key, T tDto);
-        //IQueryable<T> GetAll();
-        //T Get(object key);
-        //T SearchFirst(Expression<Func<T, bool>> predicate);
-        //IQueryable<T> SearchFor(Expression<Func<T, bool>> predicate);
-        Task<T> GetAsync(string querystring, SqlParameter[] sqlParameters = null);
-        Task<List<T>> GetAllAsync(string querystring, SqlParameter[] sqlParameters);
-        Task<T> AddAsync(string querystring, SqlParameter[] sqlParameters = null);
-        Task<T> RemoveAsync(string querystring, SqlParameter[] sqlParameters = null);
+        Task<T> GetByIdAsync(int id);
+        Task<IReadOnlyList<T>> GetAllAsync();
+        Task<int> AddAsync(T entity);
+        Task<int> UpdateAsync(T entity);
+        Task<int> DeleteAsync(int id);
     }
 }

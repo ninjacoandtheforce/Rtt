@@ -43,7 +43,7 @@ namespace Rtt.Wcf
 
         public ContactDto GetById(int id)
         {
-            return Logic.GetById(id);
+            return Logic.GetByIdAsync(id);
         }
     }
 }
