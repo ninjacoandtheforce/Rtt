@@ -1,0 +1,651 @@
+﻿@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: local('Proxima Nova Rg'), local('Proxima Nova Rg'), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/proxima-nova-webfont.woff") format("woff"), url("../fonts/proxima-nova.otf") format("opentype"), url("../fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url("../fonts/HelveticaNeueLTStd-Roman.eot");
+    src: url("../fonts/HelveticaNeueLTStd-Roman.ttf") format("truetype"), url("../fonts/HelveticaNeueLTStd-Roman.woff") format("woff"), url("../fonts/HelveticaNeueLTStd-Roman.otf") format("opentype"), url("../fonts/HelveticaNeueLTStd-Roman.svg#HelveticaNeueLTStd-Roman") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding-bottom: 25px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif!important;
+    font-size: 14px !important;
+}
+
+.form-group.required .control-label:after {
+  content:"*";
+  color:red;
+}
+
+.accordion-toggle:after {
+    font-family: 'FontAwesome';
+    content: "\f078";    
+    float: right;
+}
+.accordion-opened .accordion-toggle:after {    
+    content: "\f054";    
+}
+
+.h1, h1 {
+    font-size: 24px !important;
+    font-family: Proxima Nova Rg;
+}
+
+.h3, h3 {
+    font-size: 21px !important;
+    font-family: Proxima Nova Rg;
+}
+
+.page-header {
+    /*top right bottom left*/
+    margin: 20px 0px 10px 0px!important;
+    color: #31708F;
+}
+
+.RadGrid a.bookNowLink:visited,
+.RadGrid a.bookNowLink:link,
+.RadGrid a.bookNowLink:hover,
+.RadGrid a.bookNowLink:active {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div.qsf-right-content .qsf-col-wrap {
+    padding-right: 0;
+}
+
+div.carTitle {
+    font-size: 15pt;
+    padding: 30px 0 5px 0;
+}
+
+.carBackground {
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    height: 263px;
+    border-top: 1px solid #dae2e8;
+    border-bottom: 1px solid #dae2e8;
+    padding: 20px 20px 10px 30px;
+}
+
+.carInfo {
+    line-height: 24px;
+}
+
+hr.lineSeparator {
+    color: #a9b5be;
+    background-color: #a9b5be;
+    height: 1px;
+    border: none;
+}
+
+.bookNowTitle {
+    font-size: 20px;
+}
+
+.bookNowFrame {
+    padding: 20px 0 20px 20px;
+}
+
+.RadWindow .rwCorner .rwTopLeft,
+.RadWindow .rwTitlebar,
+.RadWindow .rwCorner .rwTopRight,
+.RadWindow .rwIcon,
+.RadWindow table .rwTopLeft,
+.RadWindow table .rwTopRight,
+.RadWindow table .rwFooterLeft,
+.RadWindow table .rwFooterRight,
+.RadWindow table .rwFooterCenter,
+.RadWindow table .rwBodyLeft,
+.RadWindow table .rwBodyRight,
+.RadWindow table .rwTitlebar,
+.RadWindow table .rwTopResize,
+.RadWindow table .rwStatusbar {
+    display: none;
+}
+
+div.RadGrid_WebBlue .rgFilterRow td {
+    padding-bottom: 4px;
+    padding-top: 8px;
+}
+
+.rbDecorated {
+    padding-right: 10px !important;
+}
+
+span.RadButton {
+    vertical-align: top;
+}
+
+/*Page Layout*/
+
+.gridHeader {
+    position: relative;
+    background-image: url(Images/btns.png);
+    background-repeat: no-repeat;
+    background-position: 100% -80px;
+    padding-right: 161px;
+}
+
+.gridHeader > div {
+    background: #9ad0da url("Images/header.png") no-repeat;
+    height: 80px;
+    margin: 0;
+}
+
+.gridHeader button.saveButton,
+.gridHeader button.loadButton {
+    height: 80px;
+    width: 80px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(Images/btns.png) no-repeat 0 0;
+    overflow: hidden;
+    border: 0 none;
+    border-radius: 0;
+}
+
+.gridHeader .saveButton span,
+.gridHeader .loadButton span {
+    text-indent: -9999px;
+    display: block;
+}
+
+.gridHeader button.saveButton {
+    right: 81px;
+    background-position: -80px 0;
+}
+
+* + html .demo-container {
+    max-width: 1040px;
+}
+
+div.demo-container {
+    border: 0 none;
+    padding: 0;
+}
+
+#example .demo-container {
+    text-align: center;
+}
+.combobox-wraper {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    text-align: left;
+}
+html .demo-container .RadButton {
+    margin-left: 5px;
+}
+html .demo-container h3 {
+    float: left;
+    margin: 33px 0 3px;
+}
+.demo-container ul {
+    margin: 30px 15px 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+.demo-container p {
+    margin: 30px 0 0;
+}
+.demo-container .results {
+    text-align: left;
+}
+.RadComboBox .rcbLabel {
+    padding-top: 5px;
+}
+.col1,
+.col2{
+    margin: 0;
+    padding: 0 5px 0 0;
+    /*width: 30%;*/
+    line-height: 14px;
+    float: left;
+}
+.col3 {
+    margin: 0;
+    padding: 0 5px 0 0;
+    /*width: 30%;*/
+    line-height: 14px;
+    float: right;
+}
+/** Multiple rows and columns */
+
+.multipleRowsColumns .rcbItem,
+.multipleRowsColumns .rcbHovered {
+    float: left;
+    margin: 0 1px;
+    min-height: 13px;
+    overflow: hidden;
+    padding: 2px 19px 2px 6px;
+    width: 193px;
+}
+/** Columns */
+
+.rcbHeader ul,
+.rcbFooter ul,
+.rcbItem ul,
+.rcbHovered ul,
+.rcbDisabled ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
+}
+.exampleRadComboBox.RadComboBoxDropDown .rcbHeader {
+    padding: 5px 27px 4px 7px;
+}
+.rcbScroll {
+    overflow: scroll !important;
+    overflow-x: hidden !important;
+}
+
+/*tile list */
+
+.RadImageAndTextTile img.rtileContentImage 
+{
+    width: 150px;
+}
+
+.RadTileList{
+    height: 100% !important;
+    /*width: 1200px !important;*/
+}
+
+#ctl00_ContentPlaceHolder1_rtlSeries .rtlistWrapper {
+    width: 1300px !important;
+}
+
+.RadTileList div:active {
+    border: #9ad0da 1px;
+}
+
+/*radtilelist*/
+/*[delete the following if peek template is not to be used]*/
+/* peek template appearance */
+.peekTemplateClass
+{
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 20px;
+}
+/* group heading tile appearance */
+.groupHeadingTitle
+{
+    height: 150px;
+    width: 150px;
+    position: relative;
+}
+.innerTitle
+{
+    width: 150px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    font-size: 17px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+div.noHover.RadTile
+{
+    border-color: transparent;
+}
+/* change tile texts to better fit long names and show over the images */
+.RadTile div.rtileBottomContent
+{
+    font-weight: normal;
+    width: auto;
+    max-width: 150px;
+    color: #999999;
+    /* semi-transparent background like this will work in CSS3 compatible browsers */
+    background-color: rgba(255,255,255,0.5);
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    bottom: 10px;
+}
+/*-->//..delete the following if peek template is not to be used*/
+
+/*-->[scroll to top]*/
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
+}
+/*-->//..[scroll to top]*/
+
+/*-->[summary button]*/
+.summaryButton {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: #3382D1;
+	color: #eeeeee;
+	width: 260px;
+	height: 48px;
+	line-height: 48px;
+	right: 90px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+    border: none;
+}
+.summaryButton:hover {
+	background-color: #007FFF;
+}
+.summaryButton.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.summaryButton i.fa {
+	line-height: inherit;
+}
+
+.quoteSummaryLabel {
+    vertical-align: top;
+    font-size: 12px;
+    font-weight: bold;
+    height: 15px;
+    margin-top: -10px;
+    font-family: Proxima Nova Rg;
+}
+
+.quoteSummaryAmount {
+    vertical-align: bottom;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Proxima Nova Rg;
+    float: right;
+}
+
+.quoteSummaryIcon {
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.modal-header-primary {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #428bca;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+
+.rigThumbnailsList {
+    width: 100% !important;
+}
+
+#ctl00_ContentPlaceHolder1_RadImageGallery1_ThumbnailsArea {
+    height: 100px !important;
+}
+
+.RadImageGallery .rigThumbnailsBox {
+    background-color: #ffffff !important;
+}
+
+.navbar-static-top {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff !important;
+}
+
+.informationLabel {
+    font-style: italic; 
+    font-weight: normal; 
+    font-size: 13px;
+    color: #666;
+    float:left;
+    margin-top: -15px;
+    margin-left: 150px;
+    
+    
+}
+
+@media screen and (min-width: 320px) and (orientation: portrait){
+   /* some CSS here */
+    .informationLabel {
+        max-width: 160px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+ }
+
+.labelYouAreEditing {
+    font-size: 15px; 
+    color: #D9534F !important; 
+    font-style:italic
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        margin-top: 60px!important;
+    }
+}
+
+#messageLbl {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.quoteButtons {
+    font-style: italic; 
+    font-weight: bold; 
+    vertical-align: middle;
+}
+
+.alignedButtons {
+    height: 40px;
+}
+
+.rtileBottomContent {
+    font-size: 12px;
+    color: #357EBD !important;
+    /*font-weight: bold!important;*/
+    text-transform: capitalize !important;
+}
+
+
+
+.panel-info {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 2px 3px rgba(102,102,102,0.4);
+}
+
+.control-label {
+    color: #737373;
+}
+
+.panel-group .panel {
+    border-radius: 3px;
+}
+
+.rieDialogs {
+    z-index: 99999;
+}
+
+.RadInput {
+    width: 100%!important;
+    height: 34px!important;
+}
+
+* + html .riSingle input.riTextBox, * + html .RadForm.rfdTextbox .riSingle input[type='text'].rfdDecorated, .RadInput .riTextBox, .RadInputMgr {
+    height: 34px !important;
+}
+
+.exVat {
+    color: green; 
+    font-style: italic;
+    font-size: 11px;
+}
+
+.RadTileList .rtlistWrapper {
+    width: 500px !important;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 23px;
+    height: 23px;
+    padding-top: 3px;
+    background: transparent;
+    border: 1px solid #737373;
+    text-align: center;
+    font-size: 14px ;
+    /*display: inline-block;*/
+    float: left;
+    margin-top: -3px;
+    margin-left: -10px;
+    color: #737373;
+}
+
+.searchActionCombo {
+    font-size: 11px!important;
+    width: 160px;
+}
+
+.searchActionCombo .rcbHovered  {
+    font-size: 12px!important;
+    /*width: 160px;*/
+}
+
+.summaryModalAmounts {
+    text-align: right;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+
+.RadGrid_MetroTouch .rgPagerCell .rgNumPart a{
+    width:30px!important;
+}
+
+#wrapper {
+    background-color: #222;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #333333;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: #333333;
+    color: #ebebeb;
+}
+
+.nav > li > a {
+    color:#999999
+}
+
+.summaryModalCar {
+    margin-right: 10px;
+}
+
+.sidebar ul li a.active {
+    background-color: #333333;
+    color: #ebebeb;
+}
+
+.add-button {
+    padding: 2px;
+    width: 24px;
+    height: 24px;
+    min-width: 0;
+    min-height: 0;
+    line-height: 16px;
+    vertical-align: middle;
+    background: url( "../images/icon-add.gif" ) center center no-repeat;
+}
+
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i7_rlbRadioStationDestination_Footer_TitleTextBox_wrapper {
+    width: 160px !important;
+}
+
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i2_HeaderTemplate {
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i3_HeaderTemplate {
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.validationError {
+    color: #A94442;
+}
+
+.newSquareBlueButton {
+    border-radius: 0px !important;
+    background-color: #35a6f1 !important;
+    border-color: #1d9bef !important;
+}
+
+.RadInputDisabled a, .RadInputDisabled .riTextBox {
+    -ms-opacity: 1 !important;
+    opacity: 1 !important;
+}

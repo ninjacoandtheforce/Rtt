@@ -10,8 +10,6 @@ namespace Rtt.Dal.Interfaces
 {
     public interface IRepository<T>
     {
-        //T Add(T tDto);
-        //T Remove(T tDto);
         //T Update(object key, T tDto);
         //IQueryable<T> GetAll();
         //T Get(object key);

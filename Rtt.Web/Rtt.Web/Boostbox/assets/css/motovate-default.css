@@ -1,0 +1,902 @@
+﻿@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../../../fonts/ProximaNova-Regular.eot');
+    src: local('Proxima Nova Rg'), local('Proxima Nova Rg'), url("../../../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../../../fonts/proxima-nova-webfont.woff") format("woff"), url("../../../fonts/proxima-nova.otf") format("opentype"), url("../../../fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url("../../../fonts/HelveticaNeueLTStd-Roman.eot");
+    src: url("../../../fonts/HelveticaNeueLTStd-Roman.ttf") format("truetype"), url("../../../fonts/HelveticaNeueLTStd-Roman.woff") format("woff"), url("../../../fonts/HelveticaNeueLTStd-Roman.otf") format("opentype"), url("../../../fonts/HelveticaNeueLTStd-Roman.svg#HelveticaNeueLTStd-Roman") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.newSquareBlueButton {
+    border-radius: 0px !important;
+    background-color: #35a6f1 !important;
+    border-color: #1d9bef !important;
+    color: white !important;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+    font-size: 13px !important;
+}
+
+.overviewButton > .btn {
+    border-radius: 5px !important;
+    background-color: darkgray !important;
+    margin-left: 3px !important;
+}
+
+.overviewButton > .btn:hover {
+    border-radius: 5px !important;
+    background-color: #ffffff !important;
+    margin-left: 3px !important;
+}
+
+.newSquareGreenButton {
+    border-radius: 0px !important;
+    background-color: #70BC99 !important;
+    border-color: #70BC99 !important;
+    color: white !important;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+    font-size: 13px !important;
+}
+
+.thinselect {
+    height: 24px !important;
+    padding: 2px 4px !important;
+}
+
+.RadPanelBar .rpText {
+    color: #ffffff;
+    /*background-color: #1899EF !important;
+    border-color: #1d9bef !important;*/
+    background-color: #4A95B1 !important;
+    border-color: #3F7C94 !important;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+    font-weight: normal !important;
+    border: none !important;
+    cursor: pointer;
+}
+
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i0_tbWorkTel,
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i0_tbFax,
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i0_tbMobile,
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i0_tbHomeTel
+ {
+    width: 100% !important;
+    height: 34px !important;
+    border-radius: 0px !important;
+    background-color: #F7F7F7;
+}
+
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i0_tbWorkTel_wrapper,
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i0_tbFax_wrapper,
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i0_tbMobile_wrapper,
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i0_tbHomeTel_wrapper {
+    width: 100% !important;
+}
+.greenButton {
+    background-color: #70BC99;
+    border-color: #70BC99;
+}
+
+.nopadding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.nopaddingnb {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.RadPanelBar .rpHeaderTemplate, .RadPanelBar .rpOut {
+    border-bottom-width: 0px !important;
+}
+
+.RadPanelBar_Bootstrap .rpLink, .RadPanelBar_Bootstrap .rpHeaderTemplate {
+    border-width: 0.5px !important;
+}
+
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i1_tbCompanyRegistrationNo {
+    border-radius: 0px;
+    width: 100%;
+    height: 34px !important;
+}
+
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i1_tbCompanyRegistrationNo_wrapper {
+    width: 100%;
+    height: 34px !important;
+}
+
+.RadPicker_Bootstrap td input.riTextBox {
+    border-radius: 0px !important;
+}
+
+.RadPicker_Bootstrap .rcCalPopup {
+    border-radius: 0px !important;
+}
+
+.RadDropDownList_Bootstrap .rddlInner {
+    border-radius: 0px !important;
+}
+
+.form-group.required .control-label:after {
+    content:"*";
+    color:red;
+}
+
+#ctl00_ContentPlaceHolder1_tbWorkTel,
+#ctl00_ContentPlaceHolder1_tbFax,
+#ctl00_ContentPlaceHolder1_tbMobile,
+#ctl00_ContentPlaceHolder1_tbHomeTel,
+#ctl00_ContentPlaceHolder1_tbWorkTelephone,
+#ctl00_ContentPlaceHolder1_tbTelephone {
+    width: 100% !important;
+    height: 34px !important;
+    border-radius: 0px !important;
+}
+
+#ctl00_ContentPlaceHolder1_tbWorkTel_wrapper,
+#ctl00_ContentPlaceHolder1_tbFax_wrapper,
+#ctl00_ContentPlaceHolder1_tbMobile_wrapper,
+#ctl00_ContentPlaceHolder1_tbHomeTel_wrapper,
+#ctl00_ContentPlaceHolder1_tbWorkTelephone_wrapper,
+#ctl00_ContentPlaceHolder1_tbTelephone_wrapper {
+    width: 100% !important;
+}
+
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i7_tbEstimatedMonthlyRepayment {
+    width: 100% !important;
+    height: 32px !important;
+    border-radius: 0px !important;
+    background-color: #F7F7F7;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+/* BEGIN DateInputs */
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i7_rdpIntendedDateOfPurchase_dateInput,
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i7_rdpDesiredDeliveryDate_dateInput {
+    background-color: #F7F7F7;
+}
+/* END date inputs*/
+
+.titleEx {
+    color: #FF9C00;
+}
+/*-->[summary button]*/
+.summaryButton {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 3000;
+    background-color: #3382D1;
+    color: #eeeeee;
+    width: 260px;
+    height: 48px;
+    line-height: 48px;
+    right: 90px;
+    bottom: 30px;
+    padding-top: 2px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    border: none;
+}
+.summaryButton:hover {
+    background-color: #007FFF;
+}
+.summaryButton.show {
+    visibility:visible;
+    cursor:pointer;
+    opacity: 1.0;
+}
+.summaryButton i.fa {
+    line-height: inherit;
+}
+
+.quoteSummaryLabel {
+    vertical-align: top;
+    font-size: 12px;
+    font-weight: bold;
+    height: 15px;
+    margin-top: -10px;
+    font-family: Proxima Nova Rg;
+}
+
+.quoteSummaryAmount {
+    vertical-align: bottom;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Proxima Nova Rg;
+    float: right;
+}
+
+.quoteSummaryIcon {
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+/*-->//.[summary button]*/
+
+
+/*-->[scroll to top]*/
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99999999;
+    background-color: #777777;
+    color: #eeeeee;
+    width: 50px;
+    height: 48px;
+    line-height: 48px;
+    right: 30px;
+    bottom: 30px;
+    padding-top: 2px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+    background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+    opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+    line-height: inherit;
+}
+/*-->//..[scroll to top]*/
+
+#ctl00_ContentPlaceHolder1_tbStartDate_dateInput_wrapper
+{
+    overflow: visible !important;
+}
+#ctl00_ContentPlaceHolder1_tbStartDate_dateInput {
+    margin-top: -3px;
+}
+#ctl00_ContentPlaceHolder1_tbEndDate_dateInput_wrapper {
+    overflow: visible !important;
+}
+#ctl00_ContentPlaceHolder1_tbEndDate_dateInput {
+    margin-top: -3px;
+}
+#ctl00_ContentPlaceHolder1_tbReminder_dateInput_wrapper {
+    overflow: visible !important;
+}
+#ctl00_ContentPlaceHolder1_tbReminder_dateInput {
+    margin-top: -3px;
+}
+#ctl00_ContentPlaceHolder1_tbFollowUp_dateInput_wrapper {
+    overflow: visible !important;
+}
+#ctl00_ContentPlaceHolder1_tbFollowUp_dateInput {
+    margin-top: -3px;
+}
+
+.btn-danger {
+    background-color: #F8576C;
+}
+
+.btn-disabled {
+    cursor: not-allowed;
+}
+
+/* BEGIN Accordion Headers */
+.selectionInformation {
+    color: #E5ED00 !important;
+    font-style: italic;
+    font-size: 13px;
+}
+
+@media screen and (min-width: 520px) and (orientation: portrait){
+    /* some CSS here */
+    .selectionInformation {
+        max-width: 160px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+/* END Accordion Headers */
+
+/* START radcombobox*/
+
+.lightyellowinput div {
+    background-color: rgba(255, 255, 0, 0.15);
+    border-radius: 8px;
+}
+
+
+
+.lightyellowinput div label {
+    font-weight: 200;
+}
+
+.rcbHeader ul,
+.rcbFooter ul,
+.rcbItem ul,
+.rcbHovered ul,
+.rcbDisabled ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
+}
+
+input.riDisabled {
+    cursor: not-allowed !important;
+}
+
+.col3 {
+    margin-top: -18px;
+    text-align: right;
+}
+/* END radcombobox*/
+
+/* BEGIN Appraisal ImageGallery */
+.rigThumbnailsList {
+    width: 100% !important;
+}
+
+#ctl00_ContentPlaceHolder1_RadImageGallery1_ThumbnailsArea {
+    height: 100px !important;
+}
+
+.RadImageGallery .rigThumbnailsBox {
+    background-color: #ffffff !important;
+    border: 1px solid #ebebeb;
+}
+
+
+/* END Appraisal ImageGallery */
+
+/* BEGIN RadTileList*/
+.rtlistWrapper {
+    width: 160px !important;
+}
+
+.RadTile div.rtileBottomContent {
+    font-weight: normal;
+    font-size: 12px;
+    width: auto;
+    max-width: 150px;
+    color: #999999;
+    /* semi-transparent background like this will work in CSS3 compatible browsers */
+    background-color: rgba(255,255,255,0.5);
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    bottom: 10px;
+}
+
+/* END RadTileList */
+
+/* BEGIN Quote Screen Custom*/
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i3_HeaderTemplate_ctl01 {
+    margin-top: -40px;
+    margin-left: 130px
+}
+/* END Quote Screen Custom*/
+
+/* BEGIN Modals*/
+#ctl00_ContentPlaceHolder1_rwFamily_C_ddlRelationship {
+    height: 35px;
+}
+.instructionText {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-style: italic;
+    color: #888888;
+}
+
+.rwStatusbar {
+    background-color: #ebebeb;
+}
+
+.rwTitleBar {
+    background-color: #3382d1;
+    color: white;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif
+}
+#ctl00_ContentPlaceHolder1_rwFamily_C_ddlRelationship {
+    height: 20px;
+}
+#rescheduleModal {
+    z-index: 9050;
+}
+/* END Modals*/
+/* BEGIN Arabic */
+#FarsiType_button_1, #FarsiType_button_2, #FarsiType_button_3 {
+    display: none;
+}
+#FarsiType_ChangeDir_1, #FarsiType_ChangeDir_2, #FarsiType_ChangeDir_3 {
+    display: none;
+}
+/* END Arabic */
+
+/* BEGIN bootstrap rows*/
+.contentRow {
+    background-color: white;
+}
+.thinrow {
+    padding-top: 2px;
+}
+.firstRow {
+    padding-top: 10px;
+}
+.lastRow {
+    padding-bottom: 10px;
+}
+
+.headerbutton {
+    padding-left: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* END bootstrap rows*/
+
+/* BEGIN RadPanelBar */
+
+.smallertext .RadPanelBar_Bootstrap {
+    font-size: 12px !important;
+}
+
+div.rpTemplate {
+    padding-bottom: 10px;
+}
+div.rpTemplate div.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+div.rpTemplate div.equalrow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* END RadPanelBar */
+
+/* BEGIN contactOverview */
+.valueIndicatorSalesCount {
+    font-size: 90px;
+    font-weight: bold;
+    margin-top: -75px;
+    margin-left: 160px;
+}
+.moneySpentAmount {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -05px;
+    margin-left: 35px;
+    color: #ff9c00;
+    text-align: right;
+}
+
+.input-group-addon {
+    cursor: pointer;
+}
+
+.fa-10x {
+    font-size: 10em !important;
+}
+.tabInner {
+    width: 100%;
+    height: 100%;
+}
+#ctl00_ContentPlaceHolder1_RadGridTasks_ctl00_ctl02_ctl03_FilterTextBox_LookUpDescription,
+#ctl00_ContentPlaceHolder1_RadGridTasks_ctl00_ctl02_ctl03_FilterTextBox_NOTES,
+#ctl00_ContentPlaceHolder1_RadGridTasks_ctl00_ctl02_ctl03_FilterTextBox_DATE_END {
+    width: 90px;
+    margin-left: -5px;
+}
+
+#ctl00_ContentPlaceHolder1_RadGridNotes_ctl00_ctl02_ctl03_FilterTextBox_DATE_ADDED,
+#ctl00_ContentPlaceHolder1_RadGridNotes_ctl00_ctl02_ctl03_FilterTextBox_LOOKUPDESCRIPTION,
+#ctl00_ContentPlaceHolder1_RadGridNotes_ctl00_ctl02_ctl03_FilterTextBox_NOTE,
+#ctl00_ContentPlaceHolder1_RadGridNotes_ctl00_ctl02_ctl03_FilterTextBox_DATE_UPDATED
+ {
+    width: 95px;
+    margin-left: -5px;
+}
+
+#ctl00_ContentPlaceHolder1_RadGridQuotes_ctl00_ctl02_ctl03_FilterTextBox_quoteNo {
+    width: 40px;
+    margin-left: -5px;
+}
+
+#ctl00_ContentPlaceHolder1_RadGridQuotes_ctl00_ctl02_ctl03_FilterTextBox_brand,
+#ctl00_ContentPlaceHolder1_RadGridQuotes_ctl00_ctl02_ctl03_FilterTextBox_modelDesc,
+#ctl00_ContentPlaceHolder1_RadGridQuotes_ctl00_ctl02_ctl03_FilterTextBox_dateModified,
+#ctl00_ContentPlaceHolder1_RadGridQuotes_ctl00_ctl02_ctl03_FilterTextBox_LOOKUPDESCRIPTION {
+    width: 85px;
+    margin-left: -5px;
+}
+
+#ContentPlaceHolder1_lbLostSales {
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+}
+
+.inDealButton {
+    width: 251px;
+    padding-bottom: 5px !important;
+}
+.quoteButtonText {
+    font-size: 12px !important;
+}
+.salesButton {
+    width: 70px !important;
+}
+.buttonA {
+    width: 70px !important;
+}
+.cancelledButton {
+    width: 70px !important;
+}
+.quoteButton {
+    width: 102px !important;
+    padding-top: 2px;
+}
+.otpButton {
+    width: 102px !important;
+}
+.dealStatusBlock {
+    height: 160px !important;
+}
+.ageCircle {
+    border: 1px solid #3382d1;
+    border-radius: 25px;
+    height: 110px;
+    width: 140px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 110px;
+}
+.lastInteractionCircle {
+    border: 1px solid #3382d1;
+    border-radius: 25px;
+    height: 110px;
+    width: 130px;
+    float: right;
+    margin-top: -110px;
+    margin-left: -50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 110px;
+}
+.ageSpan {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-weight: bold;
+}
+.vehicleBox {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    width: 100%;
+    min-height: 100px;
+}
+.customAddButton {
+    border-radius: 0px !important;
+    border: none !important;
+}
+/* END contactOverview */
+
+/* BEGIN sticky header*/
+@media screen and (min-width: 1205px) and (orientation: landscape) {
+    .fixedHeader {
+        position: fixed !important;
+        top: 0;
+        background-color: #F2F2F2;
+        z-index: 9000;
+        /*width: 82%;*/
+        height: 76px;
+        border-bottom: 1px solid #D9D9D9 !important;
+        margin-top: 0px;
+        /*left: 0;*/
+    }
+
+    .fixedBread {
+        position: fixed;
+        top: 51px;
+        background-color: #F2F2F2;
+        /*z-index: 3000;*/
+        z-index:900;
+        width: 83.25%;
+        /*height: 35px;*/
+        margin-top: 0px;
+        /*left: 0;*/
+        box-sizing: border-box;
+    }
+
+    .fixed {
+        position: fixed;
+        top: 79px;
+        background-color: #F2F2F2;
+        /*z-index: 3000;*/
+        z-index: 900;
+        width: 83.25%;
+        /*min-height: 65px;*/
+        border-bottom: 1px solid #999999;
+        /*margin-top: 0px;*/
+        padding-bottom: 10px;
+        /*left: 0;*/
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .navbarBrandFixed {
+        position: fixed;
+        top: 0px;
+        left: 45px;
+    }
+
+    .navbarMainMenuFixed {
+        position: fixed;
+        top: 70px;
+        left: 0px;
+        width: 270px;
+    }
+
+    .bottomRowExtraHeight { height: 250px !important; }
+
+    /*li.active {
+    width: 270px;
+}*/
+    .section-header { margin: 0px 0 18px !important; }
+
+    /*.box {
+        left: 0px;
+        right: 40px;
+        position: fixed;
+        width: 1205px;
+        width: 82%;
+        max-width: 100%;
+    }*/
+    
+}
+/* END sticky header*/    
+
+/* BEGIN */
+    .rowInPopup {
+    }
+/* END */
+
+.exVat {
+    color: green;
+    font-style: italic;
+    font-size: 11px;
+}
+
+
+.disabledLabel {
+    background: #ebebeb !important;
+    color: #999999 !important;
+    /*border: 1px solid #e5e5e5 !important;*/
+}
+
+.disabledTextBox {
+    border: #ebebeb !important;
+    color: #999999 !important;
+    /*border: 1px solid #e5e5e5 !important;*/
+}
+
+.riTextBox {
+    border-radius: 0px !important;
+}
+
+.radconfirm {
+}
+
+.rwDialogText {
+    margin-left: -30px;
+    font-size: 13px;
+    margin-top: 0px !important;
+    padding-bottom: 20px;
+}
+
+.rwDialogPopup {
+    margin-left: -10px !important;
+    margin-top: 5px !important;
+}
+
+/*Modal layout table*/
+.modalTable {
+    color: #666666;
+    width: 100% !important;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin-left: -15px !important;
+}
+
+.cancelStep {
+    background-color: #FFFFA6 !important;
+    border: 4px solid #FFC253 !important;
+    /*opacity: 0.5;*/
+}
+
+.boxGray {
+    background-color: #999999 !important;
+}
+
+.financeTable > tbody > tr > td {
+    padding: 2px !important;
+    line-height: normal !important;
+    vertical-align: middle;
+    height: 35px !important;
+    /*font-size: 14px !important;*/
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;*/
+}
+
+.sendQuoteModalTable {
+    color: #666666;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.tbLooksLikeLb, .riDisabled {
+    border: none !important;
+    box-shadow: none !important;
+    color: #4682b4 !important;
+    background-color: transparent !important;
+}
+
+.tbLooksLikeLb2 {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.rsDialog, .rsAdvancedModal {
+    z-index: 9010 !important;
+}
+
+/* BEGIN TestDrives*/
+#ctl00_ctl00_ContentPlaceHolder1_lbSelectedVehiclePanel {
+    margin-top: -37px;
+    margin-left: 290px;
+    font-weight: normal;
+    font-size: 15px;
+    color: orange;
+}
+
+/* END Testdrives */
+
+.validationError {
+    color: #A94442;
+}
+
+.labelYouAreEditing {
+    font-size: 15px;
+    color: #D9534F !important;
+    font-style: italic
+}
+
+#RadWindowWrapper_ctl00_ContentPlaceHolder1_RadWindowManageDemoStock {
+    z-index: 9051 !important;
+}
+
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i6_HeaderTemplate_rlColourAndTrim {
+    margin-top: -30px !important;
+    float: left;
+    margin-left: 150px;
+}
+
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i3_HeaderTemplate_rlFinanceDetails {
+    margin-top: -30px !important;
+    float: left;
+    margin-left: 130px;
+}
+
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i7_HeaderTemplate_rlOptionDetails {
+    margin-top: -30px !important;
+    float: left;
+    margin-left: 140px;
+}
+
+#ctl00_ContentPlaceHolder1_RadScheduler1_Form_EndTime_timeView {
+    z-index: 9053 !important;
+}
+
+.summaryModalAmounts {
+    text-align: right !important;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.inputHasError {
+    border: 1px solid red !important;
+}
+
+#ctl00_ContentPlaceHolder1_RadPanelBar1_i3_tbSettlementDate_dateInput {
+    border: none;
+    box-shadow: none;
+}
+
+.datePickerText {
+    color: #999999 !important;
+    font-size: 13px !important;
+}
+
+.btn-labeled .label {
+    top: 2px !important;
+    right: 2px !important;
+    border-radius: 0px !important;
+}
+
+.modal {
+    z-index: 3050 !important;
+}
+
+.RadWindow {
+    z-index: 3050 !important;
+}
+
+.button-block-inline {
+    display: flex;
+    padding-left: 3px;
+    margin-bottom: 5px;
+}
+
+    .button-block-inline div {
+        margin-left: 5px;
+    }
+
+.loginLogo {
+    margin-top: -3px;
+    padding-right: 5px;
+}
+
+.audiLogoNormal {
+    height: 15px;
+    margin-top: -3px;
+}
+.modalLabel {
+    font-weight: normal !important;
+}
+.modalLabel .redRequiredStar:after {
+    content: "*";
+    color: red;
+}
+.support-btn {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 2px
+}
+
+.rwCustomIcon {
+    margin-top: -13px !important;
+    margin-left: -9px !important;
+    width: 30px !important;
+    height: 30px !important;
+}
