@@ -74,12 +74,11 @@ namespace Rtt.Bl
             }
         }
 
-        public async Task<IQueryable<ContactDto>> GetAllAsync()
+        public async Task<List<ContactDto>> GetAllAsync()
         {
             try
             {
-                var results = await _unitOfWork.Contacts.GetAllAsync();
-                return results?.AsQueryable();
+                return await _unitOfWork.Contacts.GetAllAsync();
             }
             catch (SqlException dbx)
             {

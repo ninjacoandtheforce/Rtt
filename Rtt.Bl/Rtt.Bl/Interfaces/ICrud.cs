@@ -13,7 +13,7 @@ namespace Rtt.Bl.Interfaces
         Task<int?> CreateAsync(TDto item);
         Task<int?> DeleteAsync(int id);
         Task<int?> UpdateAsync(TDto item);
-        Task<IQueryable<TDto>> GetAllAsync();
+        Task<List<ContactDto>> GetAllAsync();
         Task<ContactDto> GetByIdAsync(int id);
         Task<TDto> SearchFirstAsync(Expression<Func<TDto, bool>> predicate);
         Task<List<TDto>> SearchForAsync(Expression<Func<TDto, bool>> predicate);

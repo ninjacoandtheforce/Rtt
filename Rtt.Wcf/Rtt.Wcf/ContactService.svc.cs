@@ -10,6 +10,7 @@ using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Rtt.Wcf
 {
@@ -19,31 +20,41 @@ namespace Rtt.Wcf
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class ContactService : IContactService
     {
-        private ContactLogic Logic { get; } = new ContactLogic();
-
-        public ContactDto Create(ContactDto item)
+        public ContactService()
         {
-            return Logic.Create(item);
+            Logic = new ContactLogic()
         }
 
-        public ContactDto Delete(ContactDto item)
+        public ContactService(ContactLogic logic)
         {
-            return Logic.Delete(item);
+            Logic = logic;
         }
 
-        public ContactDto Update(ContactDto item)
+        private ContactLogic Logic { get; }
+
+        public async Task<int?> Create(ContactDto item)
         {
-            return Logic.Update(item);
+            return await Logic.CreateAsync(item);
         }
 
-        public List<ContactDto> GetAll()
+        public async Task<int?> Delete(int id)
         {
-            return Logic.GetAll().ToList();
+            return await Logic.DeleteAsync(id);
         }
 
-        public ContactDto GetById(int id)
+        public async Task<int?> Update(ContactDto item)
         {
-            return Logic.GetByIdAsync(id);
+            return await Logic.UpdateAsync(item);
+        }
+
+        public async Task<List<ContactDto>> GetAll()
+        {
+            return await Logic.GetAllAsync();
+        }
+
+        public async Task<ContactDto> GetById(int id)
+        {
+            return await Logic.GetByIdAsync(id);
         }
     }
 }

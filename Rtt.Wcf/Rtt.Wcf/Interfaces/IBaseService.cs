@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
+using System.Threading.Tasks;
 using System.Web;
 
 namespace Rtt.Wcf.Interfaces
@@ -10,19 +11,19 @@ namespace Rtt.Wcf.Interfaces
     public interface IBaseService<T>
     {
         [OperationContract]
-        T Create(T item);
+        Task<int?> Create(T item);
 
         [OperationContract]
-        T Delete(T item);
+        Task<T> Delete(T item);
 
         [OperationContract]
-        T Update(T item);
+        Task<int?> Update(T item);
 
         [OperationContract]
-        List<T> GetAll();
+        Task<List<T>> GetAll();
 
         [OperationContract]
-        T GetById(int id);
+        Task<T> GetById(int id);
 
     }
 }
